@@ -1,0 +1,34 @@
+{
+    "name": "PlayerControls",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "dd7ea2de-6d54-49ca-ac3a-52e1fa4aa36c",
+            "actions": [
+                {
+                    "name": "Grab",
+                    "type": "Button",
+                    "id": "1e64d282-5af6-48aa-916f-3bf6539a872f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "85d2022c-7caa-494d-98ef-2ceb2ffb133f",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grab",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
