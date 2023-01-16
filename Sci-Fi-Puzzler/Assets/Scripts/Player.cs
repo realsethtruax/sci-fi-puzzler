@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
 {
     void Update()
     {
+        
     }
 
     public void Grab(InputAction.CallbackContext context) {
