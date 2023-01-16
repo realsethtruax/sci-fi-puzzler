@@ -5,5 +5,5 @@ using UnityEngine;
 public class Puzzle : MonoBehaviour
 {
     [SerializeField] protected bool _isSolved;
-    [SerializeField] private PuzzleSolution _solution;
+    [SerializeField] protected PuzzleSolution _solution;
 }
