@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7720811365051809789}
   - component: {fileID: 7720811365051809788}
   - component: {fileID: 7720811365051809778}
-  - component: {fileID: 7720811365051809779}
+  - component: {fileID: 343388140435447270}
   m_Layer: 0
   m_Name: Switch
   m_TagString: Untagged
@@ -112,7 +112,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
---- !u!114 &7720811365051809779
+--- !u!114 &343388140435447270
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -127,7 +127,7 @@ MonoBehaviour:
   switchSystem: {fileID: 0}
   _state: 2
   _staysPressed: 1
-  _canBeTurnedOff: 1
+  _canBeTurnedOff: 0
   _isLocked: 0
   _pressedSprite: {fileID: 21300000, guid: cb31dd122420ce740a9e5f9017b26ec2, type: 3}
   _unpressedSprite: {fileID: 21300000, guid: d3977e54df3b8aa43ae165e0d73f4a74, type: 3}

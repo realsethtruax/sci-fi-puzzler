@@ -21,7 +21,7 @@ public class SwitchSystem : Puzzle
                 swi.ChangeSwitchState(Switch.SwitchState.SOLVED);
             }
             _isSolved = true;
-            _solution.Complete();
+          //  _solution.Complete();
         }
     }
 }
