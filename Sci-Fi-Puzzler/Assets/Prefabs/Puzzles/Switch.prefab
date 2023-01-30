@@ -127,9 +127,11 @@ MonoBehaviour:
   switchSystem: {fileID: 0}
   _state: 2
   _staysPressed: 1
-  _canBeTurnedOff: 0
+  _canBeTurnedOff: 1
   _isLocked: 0
   _pressedSprite: {fileID: 21300000, guid: cb31dd122420ce740a9e5f9017b26ec2, type: 3}
   _unpressedSprite: {fileID: 21300000, guid: d3977e54df3b8aa43ae165e0d73f4a74, type: 3}
   _solvedSprite: {fileID: 21300000, guid: eb0e2be8f36b36046b4e8e16bd2eac8b, type: 3}
   _lockedSprite: {fileID: 0}
+  _toggleOn: {fileID: 8300000, guid: 7b0abb8fad68dae419c8801ba14a333f, type: 3}
+  _toggleOff: {fileID: 8300000, guid: 495dc5d147e08e44fa9c92fef2d32fe9, type: 3}
