@@ -32,7 +32,8 @@ public class Switch : MonoBehaviour
         _collider2D = GetComponent<Collider2D>();
 
         // Ensure Switch belongs to switch system
-        if (this.switchSystem == null) {
+        if (this.switchSystem == null)
+        {
             Debug.LogError(this.gameObject.name + " doesn't belong to a SwitchSystem object.");
         }
 
@@ -61,7 +62,8 @@ public class Switch : MonoBehaviour
         return _state;
     }
 
-    public void ChangeSwitchState(SwitchState state) {
+    public void ChangeSwitchState(SwitchState state)
+    {
         _state = state;
         switch (state)
         {
@@ -90,16 +92,19 @@ public class Switch : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (_state != SwitchState.LOCKED) { 
+        if (_state != SwitchState.LOCKED)
+        {
             if (_state == SwitchState.PRESSED)
             {
-                if (_canBeTurnedOff) {
+                if (_canBeTurnedOff)
+                {
                     this.ChangeSwitchState(SwitchState.UNPRESSED);
-                    
+
                 }
             }
-            else if (_state == SwitchState.UNPRESSED) { 
-                this.ChangeSwitchState(SwitchState.PRESSED);        
+            else if (_state == SwitchState.UNPRESSED)
+            {
+                this.ChangeSwitchState(SwitchState.PRESSED);
             }
         }
     }
@@ -112,10 +117,12 @@ public class Switch : MonoBehaviour
         }
     }
 
-    public void LockSwitch() {
+    public void LockSwitch()
+    {
         _state = SwitchState.LOCKED;
     }
-    public void UnlockSwitch() {
+    public void UnlockSwitch()
+    {
         _state = SwitchState.UNPRESSED;
     }
 }

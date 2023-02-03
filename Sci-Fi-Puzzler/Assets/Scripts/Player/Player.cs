@@ -34,10 +34,4 @@ public class Player : MonoBehaviour
     {
         rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
     }
-
-    //public void Grab(InputAction.CallbackContext context) {
-    //    if (context.performed) { 
-    //        Debug.Log("Grab! " + context.phase);
-    //    }
-    //}
 }
