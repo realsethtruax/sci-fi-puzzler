@@ -13,8 +13,6 @@ public class Door : MonoBehaviour
             Debug.Log("enter");
 
             other.transform.position = destination.position;
-
-            Debug.Log("enter");
         }
     }
 }

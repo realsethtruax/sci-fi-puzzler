@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PuzzleSolution : MonoBehaviour
 {
-    public void Complete() 
+    public void Complete()
     {
         Debug.Log("you win");
     }

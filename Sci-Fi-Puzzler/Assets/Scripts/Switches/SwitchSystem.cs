@@ -13,11 +13,13 @@ public class SwitchSystem : Puzzle
         bool isComplete = true;
         foreach (Switch item in _switches)
         {
-            if (item.GetSwitchState() == Switch.SwitchState.UNPRESSED) {
+            if (item.GetSwitchState() == Switch.SwitchState.UNPRESSED)
+            {
                 isComplete = false;
             }
         }
-        if (isComplete) {
+        if (isComplete)
+        {
             foreach (var swi in _switches)
             {
                 swi.ChangeSwitchState(Switch.SwitchState.SOLVED);
