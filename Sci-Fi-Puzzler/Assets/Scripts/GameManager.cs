@@ -7,6 +7,11 @@ public class GameManager : MonoBehaviour
     public enum GameState { SETUP, GAME_START, PLAYING, PAUSED, GAME_OVER };
     private GameState state = GameState.GAME_START;
 
+    private void Awake()
+    {
+        
+    }
+
 
     void Start()
     {
