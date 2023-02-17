@@ -1,10 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class Door : MonoBehaviour
 {
-    public Transform destination;
+    private Ease moveEase = Ease.Linear;
+    private float moveDuration = 1f;
+    [SerializeField] private Transform destination;
+    [SerializeField] private Transform cameraTransform;
 
     public void OnTriggerEnter2D(Collider2D other)
     {
@@ -13,6 +17,9 @@ public class Door : MonoBehaviour
             Debug.Log("enter");
 
             other.transform.position = destination.position;
+            Vector3 destinationPosition = destination.position;
+            destinationPosition.y = cameraTransform.position.y;
+            cameraTransform.DOMoveX(destinationPosition.x, moveDuration).SetEase(moveEase);
         }
     }
 }
