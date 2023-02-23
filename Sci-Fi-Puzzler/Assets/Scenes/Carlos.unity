@@ -5352,6 +5352,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8507258339080652916, guid: 2787a4e79c6f95741bbbc0b0e6ac781b, type: 3}
+      propertyPath: _WinSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 563d72ee21ef23d4c8c93689f7df6776, type: 3}
+    - target: {fileID: 8507258339080652916, guid: 2787a4e79c6f95741bbbc0b0e6ac781b, type: 3}
       propertyPath: _switches.Array.data[0]
       value: 
       objectReference: {fileID: 2049398408}
