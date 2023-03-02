@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
-public class Door : MonoBehaviour, IActivatable
+public class Door : MonoBehaviour, IActivatable, ILockable
 {
     private Ease moveEase = Ease.Linear;
     private float moveDuration = 1f;
@@ -66,5 +66,15 @@ public class Door : MonoBehaviour, IActivatable
     IEnumerator EnableDoorCollision() {
         yield return new WaitForSeconds(.4f);
         doorCollision.enabled = true;
+    }
+
+    public void Lock()
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public void Unlock()
+    {
+        throw new System.NotImplementedException();
     }
 }
