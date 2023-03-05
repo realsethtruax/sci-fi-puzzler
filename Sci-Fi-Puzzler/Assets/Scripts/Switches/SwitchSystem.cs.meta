@@ -3,7 +3,9 @@ guid: 570c753514257f74fb61c86dbe796bfe
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - _solution: {instanceID: 0}
+  - _WinSound: {fileID: 8300000, guid: ad5f7689539a20b408b3577c55c171ec, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
