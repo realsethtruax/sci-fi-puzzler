@@ -32,4 +32,9 @@ public class MainMenuManager : MonoBehaviour
         Debug.Log("Scene to load: " + sceneName);
         SceneManager.LoadScene(sceneName);
     }
+
+    public void GoToMain()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 }
