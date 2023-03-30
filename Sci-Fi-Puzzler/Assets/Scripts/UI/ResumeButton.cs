@@ -12,5 +12,10 @@ public class ResumeButton : MonoBehaviour
         SceneManager.UnloadSceneAsync("PauseMenu");
         SceneManager.SetActiveScene(SceneManager.GetSceneByBuildIndex(PauseMenuManager._currentSceneIndex));
     }
+
+    public void GoToMain()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 }
 
