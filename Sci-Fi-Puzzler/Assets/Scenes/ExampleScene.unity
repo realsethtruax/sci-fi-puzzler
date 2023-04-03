@@ -3888,7 +3888,8 @@ PrefabInstance:
       propertyPath: m_BackGroundColor.r
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4532893647221670571, guid: 1ee51ecb9d396e24083a032e30b44bb6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1ee51ecb9d396e24083a032e30b44bb6, type: 3}
 --- !u!1001 &4786598952570801140
 PrefabInstance:

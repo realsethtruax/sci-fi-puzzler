@@ -18,9 +18,6 @@ public class Switch : MonoBehaviour
     [SerializeField] private Sprite _solvedSprite;
     [SerializeField] private Sprite _lockedSprite;
 
-    [SerializeField] private AudioClip _toggleOn;
-    [SerializeField] private AudioClip _toggleOff;
-
 
     private SpriteRenderer _spriteRenderer;
     private Collider2D _collider2D;
@@ -72,12 +69,10 @@ public class Switch : MonoBehaviour
                 break;
             case SwitchState.PRESSED:
                 _spriteRenderer.sprite = _pressedSprite;
-                AudioManager.Instance.PlaySFX(_toggleOn);
                 switchSystem.UpdateSystem();
                 break;
             case SwitchState.UNPRESSED:
                 _spriteRenderer.sprite = _unpressedSprite;
-                AudioManager.Instance.PlaySFX(_toggleOff);
                 switchSystem.UpdateSystem();
                 break;
             case SwitchState.SOLVED:
