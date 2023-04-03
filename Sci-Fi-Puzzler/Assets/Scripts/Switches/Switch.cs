@@ -70,6 +70,7 @@ public class Switch : MonoBehaviour
             case SwitchState.PRESSED:
                 _spriteRenderer.sprite = _pressedSprite;
                 switchSystem.UpdateSystem();
+                AudioManager.instance.PlayOneShot(FMODEvents.instance.switchToggleOn, this.transform.position);
                 break;
             case SwitchState.UNPRESSED:
                 _spriteRenderer.sprite = _unpressedSprite;
