@@ -268,6 +268,20 @@ MonoBehaviour:
       Data3: 15244444
       Data4: 2090691354
     Path: event:/Toggle ON
+  <switchToggleOff>k__BackingField:
+    Guid:
+      Data1: 832282258
+      Data2: 1209933002
+      Data3: -733749102
+      Data4: -1721394656
+    Path: event:/Toggle OFF
+  <switchWin>k__BackingField:
+    Guid:
+      Data1: 290856645
+      Data2: 1075988463
+      Data3: 1478312369
+      Data4: -1698193458
+    Path: event:/SwitchWin
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

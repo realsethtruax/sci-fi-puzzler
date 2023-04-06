@@ -1,5 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8391144519536416376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/doorClose
+  m_EditorClassIdentifier: 
+  Path: event:/doorClose
+  Guid:
+    Data1: 1441320081
+    Data2: 1095151919
+    Data3: -2068222540
+    Data4: 311790198
+  Banks:
+  - {fileID: -6235891789740938197}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-6673560309545736206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,10 +42,10 @@ MonoBehaviour:
   Path: ../../../FMOD Studio/Sci-Fi Puzzler/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638161107364076403
+  lastModified: 638161969453229934
   FileSizes:
   - Name: Desktop
-    Value: 850
+    Value: 1060
   Exists: 1
 --- !u!114 &-6235891789740938197
 MonoBehaviour:
@@ -35,10 +62,10 @@ MonoBehaviour:
   Path: ../../../FMOD Studio/Sci-Fi Puzzler/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638161107364983131
+  lastModified: 638161969455341688
   FileSizes:
   - Name: Desktop
-    Value: 12160
+    Value: 100032
   Exists: 1
 --- !u!114 &-6098039326260319313
 MonoBehaviour:
@@ -82,11 +109,38 @@ MonoBehaviour:
   Path: ../../../FMOD Studio/Sci-Fi Puzzler/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638161107364056219
+  lastModified: 638161969453214747
   FileSizes:
   - Name: Desktop
     Value: 1036
   Exists: 1
+--- !u!114 &-171911711449927756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/doorLock
+  m_EditorClassIdentifier: 
+  Path: event:/doorLock
+  Guid:
+    Data1: 792977935
+    Data2: 1128227335
+    Data3: -78716017
+    Data4: 1663067484
+  Banks:
+  - {fileID: -6235891789740938197}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106,13 +160,45 @@ MonoBehaviour:
   EditorEvents:
   - {fileID: -6098039326260319313}
   - {fileID: 6997060911830142139}
+  - {fileID: -171911711449927756}
+  - {fileID: 8685688304377402419}
+  - {fileID: 7449834677943860049}
+  - {fileID: -8391144519536416376}
+  - {fileID: 5890168152745504099}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1512425665103959877}
   StringsBanks:
   - {fileID: -6673560309545736206}
-  cacheTime: 638161107364983131
+  cacheTime: 638161969455341688
   cacheVersion: 131603
+--- !u!114 &5890168152745504099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SwitchWin
+  m_EditorClassIdentifier: 
+  Path: event:/SwitchWin
+  Guid:
+    Data1: 290856645
+    Data2: 1075988463
+    Data3: 1478312369
+    Data4: -1698193458
+  Banks:
+  - {fileID: -6235891789740938197}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &6997060911830142139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,6 +217,60 @@ MonoBehaviour:
     Data2: 1180862037
     Data3: 15244444
     Data4: 2090691354
+  Banks:
+  - {fileID: -6235891789740938197}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &7449834677943860049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/doorUnlock
+  m_EditorClassIdentifier: 
+  Path: event:/doorUnlock
+  Guid:
+    Data1: 645071994
+    Data2: 1320716596
+    Data3: 1399030675
+    Data4: -1181235261
+  Banks:
+  - {fileID: -6235891789740938197}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &8685688304377402419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/doorOpen
+  m_EditorClassIdentifier: 
+  Path: event:/doorOpen
+  Guid:
+    Data1: -1406346642
+    Data2: 1181840461
+    Data3: 1119669146
+    Data4: -353390038
   Banks:
   - {fileID: -6235891789740938197}
   IsStream: 0
