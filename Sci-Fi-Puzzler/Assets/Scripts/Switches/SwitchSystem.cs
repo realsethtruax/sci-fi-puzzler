@@ -7,7 +7,6 @@ public class SwitchSystem : Puzzle
 {
     [SerializeField] private Switch[] _switches;
 
-    [SerializeField] private AudioClip _WinSound;
     public UnityEvent _openDoor;
 
     public void UpdateSystem()
@@ -27,14 +26,10 @@ public class SwitchSystem : Puzzle
                 swi.ChangeSwitchState(Switch.SwitchState.SOLVED);
             }
             _isSolved = true;
-            StartCoroutine(PlayWinSound());
             // _solution.Complete();
             _openDoor?.Invoke();
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.switchWin, this.transform.position);
             Debug.Log("you win");
         }
-    }
-    IEnumerator PlayWinSound(){
-        AudioManager.Instance.PlaySFX(_WinSound);
-        yield return new WaitForSeconds(.8f);
     }
 }
