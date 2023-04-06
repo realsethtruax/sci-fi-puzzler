@@ -1,5 +1,23 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8422288742477320538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SFX.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/SFX.bank
+  Name: SFX
+  StudioPath: bank:/SFX
+  lastModified: 638164016398937949
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-8391144519536416376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19,7 +37,7 @@ MonoBehaviour:
     Data3: -2068222540
     Data4: 311790198
   Banks:
-  - {fileID: -6235891789740938197}
+  - {fileID: -8422288742477320538}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -27,46 +45,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-6673560309545736206
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: ../../../FMOD Studio/Sci-Fi Puzzler/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638161969453229934
-  FileSizes:
-  - Name: Desktop
-    Value: 1060
-  Exists: 1
---- !u!114 &-6235891789740938197
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/SFX.bank
-  m_EditorClassIdentifier: 
-  Path: ../../../FMOD Studio/Sci-Fi Puzzler/Build/Desktop/SFX.bank
-  Name: SFX
-  StudioPath: bank:/SFX
-  lastModified: 638161969455341688
-  FileSizes:
-  - Name: Desktop
-    Value: 100032
-  Exists: 1
 --- !u!114 &-6098039326260319313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86,7 +64,7 @@ MonoBehaviour:
     Data3: -733749102
     Data4: -1721394656
   Banks:
-  - {fileID: -6235891789740938197}
+  - {fileID: -8422288742477320538}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -94,7 +72,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-1512425665103959877
+--- !u!114 &-4228835046978858259
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -106,13 +84,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/Master.bank
   m_EditorClassIdentifier: 
-  Path: ../../../FMOD Studio/Sci-Fi Puzzler/Build/Desktop/Master.bank
+  Path: Assets/Audio/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638161969453214747
-  FileSizes:
-  - Name: Desktop
-    Value: 1036
+  lastModified: 638164016377307398
+  FileSizes: []
   Exists: 1
 --- !u!114 &-171911711449927756
 MonoBehaviour:
@@ -133,7 +109,7 @@ MonoBehaviour:
     Data3: -78716017
     Data4: 1663067484
   Banks:
-  - {fileID: -6235891789740938197}
+  - {fileID: -8422288742477320538}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -154,9 +130,9 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -6673560309545736206}
-  - {fileID: -1512425665103959877}
-  - {fileID: -6235891789740938197}
+  - {fileID: 1949051344109743187}
+  - {fileID: -4228835046978858259}
+  - {fileID: -8422288742477320538}
   EditorEvents:
   - {fileID: -6098039326260319313}
   - {fileID: 6997060911830142139}
@@ -167,11 +143,31 @@ MonoBehaviour:
   - {fileID: 5890168152745504099}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -1512425665103959877}
+  - {fileID: -4228835046978858259}
   StringsBanks:
-  - {fileID: -6673560309545736206}
-  cacheTime: 638161969455341688
+  - {fileID: 1949051344109743187}
+  cacheTime: 638164016398937949
   cacheVersion: 131603
+--- !u!114 &1949051344109743187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638164016387686019
+  FileSizes:
+  - Name: 
+    Value: 1060
+  Exists: 1
 --- !u!114 &5890168152745504099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,7 +187,7 @@ MonoBehaviour:
     Data3: 1478312369
     Data4: -1698193458
   Banks:
-  - {fileID: -6235891789740938197}
+  - {fileID: -8422288742477320538}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -218,7 +214,7 @@ MonoBehaviour:
     Data3: 15244444
     Data4: 2090691354
   Banks:
-  - {fileID: -6235891789740938197}
+  - {fileID: -8422288742477320538}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -245,7 +241,7 @@ MonoBehaviour:
     Data3: 1399030675
     Data4: -1181235261
   Banks:
-  - {fileID: -6235891789740938197}
+  - {fileID: -8422288742477320538}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -272,7 +268,7 @@ MonoBehaviour:
     Data3: 1119669146
     Data4: -353390038
   Banks:
-  - {fileID: -6235891789740938197}
+  - {fileID: -8422288742477320538}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
