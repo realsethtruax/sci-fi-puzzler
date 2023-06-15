@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using FMODUnity;
 
-public class FMODEvents : MonoBehaviour
+public class SFXEvents : MonoBehaviour
 {
     [field: Header("SwitchOn SFX")]
     [field: SerializeField] public EventReference switchToggleOn {get; private set;}
@@ -20,16 +20,15 @@ public class FMODEvents : MonoBehaviour
     [field: Header("doorCloseSFX")]
     [field: SerializeField] public EventReference doorClose {get; private set;}
 
-    
-
-    public static FMODEvents instance {get; private set;}
-
-    private void Awake() 
+    private void Awake()
     {
-        if (instance != null)
+        // Singleton implementation
+        if (instance != null && instance != this)
         {
-            Debug.LogError("Found more than one FMOD Events script in the scene.");
-        }    
+            Destroy(gameObject);
+            return;
+        }
         instance = this;
     }
+    public static SFXEvents instance {get; private set;}
 }

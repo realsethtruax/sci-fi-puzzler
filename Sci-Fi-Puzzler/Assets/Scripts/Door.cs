@@ -5,8 +5,8 @@ using DG.Tweening;
 
 public class Door : MonoBehaviour, IActivatable, ILockable
 {
-    private Ease moveEase = Ease.Linear;
-    private float moveDuration = 1f;
+    //private Ease moveEase = Ease.Linear;
+    //private float moveDuration = 1f;
     [SerializeField] private Transform destination;
     [SerializeField] private Transform cameraTransform;
 
@@ -51,14 +51,14 @@ public class Door : MonoBehaviour, IActivatable, ILockable
         _isOpen = true;
         animator.SetBool("isOpen", _isOpen);
         StartCoroutine(DisableDoorCollision());
-        AudioManager.instance.PlayOneShot(FMODEvents.instance.doorOpen, this.transform.position);
+        AudioManager.instance.PlayOneShot(SFXEvents.instance.doorOpen);
     }
 
     public void Deactivate() {
         _isOpen = false;
         animator.SetBool("isOpen", _isOpen);
         StartCoroutine(EnableDoorCollision());
-        AudioManager.instance.PlayOneShot(FMODEvents.instance.doorClose, this.transform.position);
+        AudioManager.instance.PlayOneShot(SFXEvents.instance.doorClose);
     }
 
     IEnumerator DisableDoorCollision() {

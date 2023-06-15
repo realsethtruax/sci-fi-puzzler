@@ -28,7 +28,7 @@ public class SwitchSystem : Puzzle
             _isSolved = true;
             // _solution.Complete();
             _openDoor?.Invoke();
-            AudioManager.instance.PlayOneShot(FMODEvents.instance.switchWin, this.transform.position);
+            AudioManager.instance.PlayOneShot(SFXEvents.instance.switchWin);
             Debug.Log("you win");
         }
     }
