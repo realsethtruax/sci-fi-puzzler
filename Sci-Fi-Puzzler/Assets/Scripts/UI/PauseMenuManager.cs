@@ -9,7 +9,7 @@ public class PauseMenuManager : MonoBehaviour
     public static bool _isPaused = false;
     public static int _currentSceneIndex;
 
-    private async void Update()
+    private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {

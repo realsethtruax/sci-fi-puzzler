@@ -404,6 +404,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 156040532}
   m_CullTransparentMesh: 1
+--- !u!1 &314142651
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 314142653}
+  - component: {fileID: 314142652}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &314142652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314142651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fde4105a55043f74cbff870c8d9d1105, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicEvents: {fileID: 1259593936}
+--- !u!4 &314142653
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314142651}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.94758433, y: 0.17780697, z: 0.17047818}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 968457030}
+  - {fileID: 1259593937}
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &357494877
 GameObject:
   m_ObjectHideFlags: 0
@@ -1709,6 +1756,85 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 883971446}
   m_CullTransparentMesh: 1
+--- !u!1 &968457029
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 968457030}
+  - component: {fileID: 968457031}
+  m_Layer: 0
+  m_Name: SFXEvents
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &968457030
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 968457029}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 314142653}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &968457031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 968457029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecaa14e4517ff044db12562d531d3133, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <switchToggleOn>k__BackingField:
+    Guid:
+      Data1: -168671008
+      Data2: 1180862037
+      Data3: 15244444
+      Data4: 2090691354
+    Path: event:/Toggle ON
+  <switchToggleOff>k__BackingField:
+    Guid:
+      Data1: 832282258
+      Data2: 1209933002
+      Data3: -733749102
+      Data4: -1721394656
+    Path: event:/Toggle OFF
+  <switchWin>k__BackingField:
+    Guid:
+      Data1: 290856645
+      Data2: 1075988463
+      Data3: 1478312369
+      Data4: -1698193458
+    Path: event:/SwitchWin
+  <doorOpen>k__BackingField:
+    Guid:
+      Data1: -1406346642
+      Data2: 1181840461
+      Data3: 1119669146
+      Data4: -353390038
+    Path: event:/doorOpen
+  <doorClose>k__BackingField:
+    Guid:
+      Data1: 1441320081
+      Data2: 1095151919
+      Data3: -2068222540
+      Data4: 311790198
+    Path: event:/doorClose
 --- !u!1 &1102847850
 GameObject:
   m_ObjectHideFlags: 0
@@ -2054,6 +2180,78 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1202228979}
   m_CullTransparentMesh: 1
+--- !u!1 &1259593935
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1259593937}
+  - component: {fileID: 1259593936}
+  m_Layer: 0
+  m_Name: MusicEvents
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1259593936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259593935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14b2f9b3ba68427438ba6597f10740a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <None>k__BackingField:
+    Guid:
+      Data1: 858512001
+      Data2: 1299954976
+      Data3: -1509857402
+      Data4: 1391635788
+    Path: event:/No Music
+  <Track0>k__BackingField:
+    Guid:
+      Data1: 1234764923
+      Data2: 1211112595
+      Data3: -805171526
+      Data4: 943182965
+    Path: event:/TitleMusic
+  <Track1>k__BackingField:
+    Guid:
+      Data1: -656449886
+      Data2: 1152156983
+      Data3: 875256238
+      Data4: -593770341
+    Path: event:/Music1
+  <Track2>k__BackingField:
+    Guid:
+      Data1: -656449886
+      Data2: 1152156983
+      Data3: 875256238
+      Data4: -593770341
+    Path: event:/Music1
+--- !u!4 &1259593937
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259593935}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 314142653}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1288112413
 GameObject:
   m_ObjectHideFlags: 0
