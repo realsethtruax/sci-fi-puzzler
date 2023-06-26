@@ -282,6 +282,20 @@ MonoBehaviour:
       Data3: 1478312369
       Data4: -1698193458
     Path: event:/SwitchWin
+  <doorOpen>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  <doorClose>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

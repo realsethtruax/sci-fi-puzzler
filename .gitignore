@@ -90,10 +90,10 @@ crashlytics-build.properties
 fmod_editor.log
 
 # Ignore the Cache-file since it is updated locally either way
-/[Aa]ssets/**/FMODStudioCache.asset
-/[Aa]ssets/**/FMODStudioCache.asset.meta
-/[Aa]ssets/Plugins/FMOD/Cache.meta
-/[Aa]ssets/Plugins/FMOD/Cache/Editor.meta
+/Sci-Fi-Puzzler/[Aa]ssets/**/FMODStudioCache.asset
+/Sci-Fi-Puzzler/[Aa]ssets/**/FMODStudioCache.asset.meta
+/Sci-Fi-Puzzler/[Aa]ssets/Plugins/FMOD/Cache.meta
+/Sci-Fi-Puzzler/[Aa]ssets/Plugins/FMOD/Cache/Editor.meta
 
 # Log-files
 fmod.log
