@@ -1,13 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class PauseMenuManager : MonoBehaviour
 {
     public static bool _isPaused = false;
     public static int _currentSceneIndex;
+
+    [SerializeField]
+    private GameObject pauseMenuPrefab;
+
+    private GameObject pauseMenuInstance;
 
     private void Update()
     {
@@ -17,22 +18,42 @@ public class PauseMenuManager : MonoBehaviour
         }
     }
 
-    private async void HandlePause()
+    private void HandlePause()
     {
         _isPaused = !_isPaused;
-        _currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
 
         if (_isPaused)
         {
             Time.timeScale = 0;
-            SceneManager.LoadScene("PauseMenu", LoadSceneMode.Additive);
-            await Task.Yield();
+
+            // Instantiate the prefab if it hasn't been instantiated yet
+            if (pauseMenuInstance == null && pauseMenuPrefab != null)
+            {
+                pauseMenuInstance = Instantiate(pauseMenuPrefab);
+            }
         }
         else
         {
             Time.timeScale = 1;
-            SceneManager.UnloadSceneAsync("PauseMenu");
-            SceneManager.SetActiveScene(SceneManager.GetSceneByBuildIndex(_currentSceneIndex));
+
+            // Remove the instantiated prefab if it exists
+            if (pauseMenuInstance != null)
+            {
+                Destroy(pauseMenuInstance);
+            }
+        }
+    }
+
+    public void RemovePauseMenu()
+    {
+        if (pauseMenuInstance != null)
+        {
+            Destroy(pauseMenuInstance);
+            pauseMenuInstance = null;
+
+            _isPaused = !_isPaused;
+
+            Time.timeScale = 1;
         }
     }
 }

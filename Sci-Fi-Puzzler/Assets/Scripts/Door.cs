@@ -5,7 +5,6 @@ using DG.Tweening;
 
 public class Door : MonoBehaviour, IActivatable, ILockable
 {
-    //private Ease moveEase = Ease.Linear;
     //private float moveDuration = 1f;
     [SerializeField] private Transform destination;
     [SerializeField] private Transform cameraTransform;
