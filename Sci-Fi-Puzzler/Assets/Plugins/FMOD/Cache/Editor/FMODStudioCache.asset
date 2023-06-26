@@ -1,23 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8422288742477320538
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/SFX.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/Audio/SFX.bank
-  Name: SFX
-  StudioPath: bank:/SFX
-  lastModified: 638164031844121023
-  FileSizes: []
-  Exists: 1
 --- !u!114 &-8391144519536416376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37,7 +19,7 @@ MonoBehaviour:
     Data3: -2068222540
     Data4: 311790198
   Banks:
-  - {fileID: -8422288742477320538}
+  - {fileID: 7936367964665422628}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -45,6 +27,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-7496500020080401228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: ../../../FMOD Studio/Sci-Fi Puzzler/Build/Desktop/Music.bank
+  Name: Music
+  StudioPath: bank:/Music
+  lastModified: 638211423600832747
+  FileSizes:
+  - Name: Desktop
+    Value: 1215520
+  Exists: 1
 --- !u!114 &-6098039326260319313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64,7 +66,7 @@ MonoBehaviour:
     Data3: -733749102
     Data4: -1721394656
   Banks:
-  - {fileID: -8422288742477320538}
+  - {fileID: 7936367964665422628}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -72,7 +74,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-4228835046978858259
+--- !u!114 &-4664502204043289870
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -81,14 +83,50 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/TitleMusic
   m_EditorClassIdentifier: 
-  Path: Assets/Audio/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638164031843831805
-  FileSizes: []
+  Path: event:/TitleMusic
+  Guid:
+    Data1: 1234764923
+    Data2: 1211112595
+    Data3: -805171526
+    Data4: 943182965
+  Banks:
+  - {fileID: -7496500020080401228}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -2734121739035908270}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 139636
+--- !u!114 &-2734121739035908270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TitleMusic/Music Track
+  m_EditorClassIdentifier: 
+  Name: Music Track
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1853514179
+    data2: 1015468761
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - No Music
+  - Title Music
   Exists: 1
 --- !u!114 &-171911711449927756
 MonoBehaviour:
@@ -109,7 +147,7 @@ MonoBehaviour:
     Data3: -78716017
     Data4: 1663067484
   Banks:
-  - {fileID: -8422288742477320538}
+  - {fileID: 7936367964665422628}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -130,9 +168,10 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 1949051344109743187}
-  - {fileID: -4228835046978858259}
-  - {fileID: -8422288742477320538}
+  - {fileID: 6051976753884786669}
+  - {fileID: 7472115704074907412}
+  - {fileID: -7496500020080401228}
+  - {fileID: 7936367964665422628}
   EditorEvents:
   - {fileID: -6098039326260319313}
   - {fileID: 6997060911830142139}
@@ -141,14 +180,18 @@ MonoBehaviour:
   - {fileID: 7449834677943860049}
   - {fileID: -8391144519536416376}
   - {fileID: 5890168152745504099}
-  EditorParameters: []
+  - {fileID: -4664502204043289870}
+  - {fileID: 4414410846603852566}
+  - {fileID: 8002052653345104894}
+  EditorParameters:
+  - {fileID: 4924775962360950430}
   MasterBanks:
-  - {fileID: -4228835046978858259}
+  - {fileID: 7472115704074907412}
   StringsBanks:
-  - {fileID: 1949051344109743187}
-  cacheTime: 638164031844121023
+  - {fileID: 6051976753884786669}
+  cacheTime: 638211423601735734
   cacheVersion: 131603
---- !u!114 &1949051344109743187
+--- !u!114 &4414410846603852566
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -157,16 +200,49 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/No Music
   m_EditorClassIdentifier: 
-  Path: Assets/Audio/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638164031843971435
-  FileSizes:
-  - Name: 
-    Value: 1060
+  Path: event:/No Music
+  Guid:
+    Data1: 858512001
+    Data2: 1299954976
+    Data3: -1509857402
+    Data4: 1391635788
+  Banks:
+  - {fileID: -7496500020080401228}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &4924775962360950430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music Track
+  m_EditorClassIdentifier: 
+  Name: Music Track
+  StudioPath: parameter:/Music Track
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1853514179
+    data2: 1015468761
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - No Music
+  - Title Music
   Exists: 1
 --- !u!114 &5890168152745504099
 MonoBehaviour:
@@ -187,7 +263,7 @@ MonoBehaviour:
     Data3: 1478312369
     Data4: -1698193458
   Banks:
-  - {fileID: -8422288742477320538}
+  - {fileID: 7936367964665422628}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -195,6 +271,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &6051976753884786669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../../../FMOD Studio/Sci-Fi Puzzler/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638211423599475828
+  FileSizes:
+  - Name: Desktop
+    Value: 1288
+  Exists: 1
 --- !u!114 &6997060911830142139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,7 +310,7 @@ MonoBehaviour:
     Data3: 15244444
     Data4: 2090691354
   Banks:
-  - {fileID: -8422288742477320538}
+  - {fileID: 7936367964665422628}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -241,7 +337,7 @@ MonoBehaviour:
     Data3: 1399030675
     Data4: -1181235261
   Banks:
-  - {fileID: -8422288742477320538}
+  - {fileID: 7936367964665422628}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -249,6 +345,73 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &7472115704074907412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../../../FMOD Studio/Sci-Fi Puzzler/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638211423599440136
+  FileSizes:
+  - Name: Desktop
+    Value: 1250
+  Exists: 1
+--- !u!114 &7936367964665422628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SFX.bank
+  m_EditorClassIdentifier: 
+  Path: ../../../FMOD Studio/Sci-Fi Puzzler/Build/Desktop/SFX.bank
+  Name: SFX
+  StudioPath: bank:/SFX
+  lastModified: 638211423601735734
+  FileSizes:
+  - Name: Desktop
+    Value: 100032
+  Exists: 1
+--- !u!114 &8002052653345104894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music1
+  m_EditorClassIdentifier: 
+  Path: event:/Music1
+  Guid:
+    Data1: -656449886
+    Data2: 1152156983
+    Data3: 875256238
+    Data4: -593770341
+  Banks:
+  - {fileID: -7496500020080401228}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 15000
 --- !u!114 &8685688304377402419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -268,7 +431,7 @@ MonoBehaviour:
     Data3: 1119669146
     Data4: -353390038
   Banks:
-  - {fileID: -8422288742477320538}
+  - {fileID: 7936367964665422628}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
