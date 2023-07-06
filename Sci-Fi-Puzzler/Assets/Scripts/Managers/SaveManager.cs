@@ -42,7 +42,14 @@ public class SaveManager : MonoBehaviour
         // Load AudioSettings Class
         _audioSettingsFilePath = Application.persistentDataPath + "/audioData.data";
         Debug.Log(_audioSettingsFilePath);
-        OpenOrCreatePersistentAudioSettingsFile(_audioSettingsFilePath);
+        if (File.Exists(_audioSettingsFilePath))
+        {
+            OpenPersistentAudioSettingsFile(_audioSettingsFilePath);
+        }
+        else
+        {
+            CreatePersistentAudioSettingsFile(_audioSettingsFilePath);
+        }
 
         // Unlock Resources
         _audioSettingsLocked = false;
@@ -52,14 +59,22 @@ public class SaveManager : MonoBehaviour
     }
 
     // Audio Setings Persistent Data Methods
-    private void OpenOrCreatePersistentAudioSettingsFile(string filepath) {
-        _audioSettings = new AudioSettings();
-        _audioSettings.Initialize();
-        _dataStream = new FileStream(filepath, FileMode.OpenOrCreate);
+    private void OpenPersistentAudioSettingsFile(string filepath) {
+        _dataStream = new FileStream(filepath, FileMode.Open);
         _audioSettings = _converter.Deserialize(_dataStream) as AudioSettings;
         _dataStream.Close();
         Debug.Log("AudioSettings class loaded into SaveManager");
     }
+    
+    private void CreatePersistentAudioSettingsFile(string filepath) {
+        _audioSettings = new AudioSettings();
+        _audioSettings.Initialize();
+        _dataStream = new FileStream(filepath, FileMode.Create);
+        _converter.Serialize(_dataStream, _audioSettings);
+        _dataStream.Close();
+        Debug.Log("AudioSettings class created and loaded to SaveManager");
+    }
+
 
     private void UpdatePersistentAudioSettingsFile(string filepath) {
         _dataStream = new FileStream(filepath, FileMode.Open);
