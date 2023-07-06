@@ -50,14 +50,14 @@ public class Door : MonoBehaviour, IActivatable, ILockable
         _isOpen = true;
         animator.SetBool("isOpen", _isOpen);
         StartCoroutine(DisableDoorCollision());
-        AudioManager.instance.PlayOneShot(SFXEvents.instance.doorOpen);
+        AudioManager.audioManagerInstance.PlayOneShot(SFXEvents.instance.doorOpen);
     }
 
     public void Deactivate() {
         _isOpen = false;
         animator.SetBool("isOpen", _isOpen);
         StartCoroutine(EnableDoorCollision());
-        AudioManager.instance.PlayOneShot(SFXEvents.instance.doorClose);
+        AudioManager.audioManagerInstance.PlayOneShot(SFXEvents.instance.doorClose);
     }
 
     IEnumerator DisableDoorCollision() {

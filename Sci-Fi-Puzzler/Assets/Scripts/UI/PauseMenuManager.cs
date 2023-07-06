@@ -7,7 +7,6 @@ public class PauseMenuManager : MonoBehaviour
 
     [SerializeField]
     private GameObject pauseMenuPrefab;
-
     private GameObject pauseMenuInstance;
 
     private void Update()
@@ -48,6 +47,7 @@ public class PauseMenuManager : MonoBehaviour
     {
         if (pauseMenuInstance != null)
         {
+            AudioManager.audioManagerInstance.PassCurrentAudioSettingsToSaveManager();
             Destroy(pauseMenuInstance);
             pauseMenuInstance = null;
 
