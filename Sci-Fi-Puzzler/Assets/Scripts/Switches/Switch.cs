@@ -70,12 +70,12 @@ public class Switch : MonoBehaviour
             case SwitchState.PRESSED:
                 _spriteRenderer.sprite = _pressedSprite;
                 switchSystem.UpdateSystem();
-                AudioManager.instance.PlayOneShot(SFXEvents.instance.switchToggleOn);
+                AudioManager.audioManagerInstance.PlayOneShot(SFXEvents.instance.switchToggleOn);
                 break;
             case SwitchState.UNPRESSED:
                 _spriteRenderer.sprite = _unpressedSprite;
                 switchSystem.UpdateSystem();
-                AudioManager.instance.PlayOneShot(SFXEvents.instance.switchToggleOff);
+                AudioManager.audioManagerInstance.PlayOneShot(SFXEvents.instance.switchToggleOff);
                 break;
             case SwitchState.SOLVED:
                 _spriteRenderer.sprite = _solvedSprite;
